@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        display: flex;
+        min-height: 100vh;
+        background-color: #ffffff;
+        color: #333333;
+    }
+    /* 左側深色邊欄 */
+    .sidebar {
+        width: 230px;
+        background-color: #1c1c24;
+        color: #ffffff;
+        padding-top: 10px;
+        flex-shrink: 0;
+    }
+    .sidebar ul {
+        list-style: none;
+    }
+    .sidebar li a {
+        display: flex;
+        align-items: center;
+        padding: 16px 24px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        transition: background-color 0.2s;
+    }
+    .sidebar li a:hover {
+        background-color: #2b2b36;
+    }
+    .sidebar li a i {
+        width: 24px;
+        margin-right: 16px;
+        text-align: center;
+        font-size: 16px;
+    }
+    /* 右側主內容區 */
+    .main-content {
+        flex: 1;
+        padding: 40px 50px;
+    }
+    .main-content h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 28px;
+        color: #111111;
+    }
+    .posts-list {
+        list-style-type: disc;
+        padding-left: 24px;
+        font-size: 18px;
+        line-height: 2.2;
+    }
+    .posts-list li {
+        color: #333333;
+    }
+    .posts-list .date {
+        margin-right: 12px;
+        color: #333333;
+    }
+    .posts-list a {
+        color: #5b84fa;
+        text-decoration: none;
+    }
+    .posts-list a:hover {
+        text-decoration: underline;
+    }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="https://lmkivs.github.io"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="https://lmkivs.github.io/about"><i class="fa-regular fa-address-card"></i>About</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <h1>Menu</h1>
+        <ul class="posts-list">
+            <li><a href="https://lmkivs.github.io/orthotransversal">orthotransversal_envelope</a></li>
+        </ul>
+    </main>
+</body>
+</html>
